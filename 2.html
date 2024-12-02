@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">回到首页</a>
+    <p>2.将字符串中的字母使用**重新拼接：
+        // 如： var str = "a b c";    变成 --> a**b**c</p>
+</body>
+<script>
+    var str = "a b c";
+    var str1=str.slice(0,1)+"**"+str.slice(2,3)+"**"+str[str.length-1];
+    console.log(str1);
+    // var a = str.length-1;
+    // console.log(str[a]);
+    // console.log(str[ str.length-1]);
+
+    
+    var s2 = "a b c";
+console.log(s2.split(' ').join("**"))
+</script>
+</html>

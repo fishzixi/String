@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">首页</a>
+    <p>手机号隐私处理 "17798765690" ----> "177****5690"</p>
+</body>
+<script>
+    var str = "17798765690";
+    // var str1=str.substr(0,3)+"****"+str.substr(str.length-4,str.length);
+
+
+    var str1 =str.split("");
+    str1.splice(3,4,"****");
+    var str2 =str1.join("");
+    console.log(str2)
+    //这样返回的值是删除的数
+
+
+    // console.log(str1);
+</script>
+</html>

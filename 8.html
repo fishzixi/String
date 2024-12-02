@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">首页</a>
+   <p>8.去字符串首尾空格，不使用trim的方法     "    a    b    c     " ---->"a    b    c"</p>
+</body>
+<script>
+    var str="  a  b  c  ";
+    
+    for(i=0;i<=str.length-1;i++){
+        if(str[i]!==" "){
+            var a = i;
+            // console.log(a);
+            break;
+        }
+    }
+
+    for(j=str.length-1;j>=0;j--){
+        if(str[j]!==" "){
+            var b = j;
+            // console.log(b);
+            break;
+        }
+    }
+
+    var str1=str.slice(a,b+1);
+    console.log(str1);
+</script>
+</html>

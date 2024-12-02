@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">回到首页</a>
+    <p>将字符串中—后面的小写字母变成大写，并且删除-符号“abc—r67p8”----->“abcR67P8”</p>
+</body>
+<script>
+ var str="abc—r67p8";
+ var str1=str.slice(0,3);
+ var str2=str.slice(4,9);
+ var str3=str2[0].toUpperCase()+str2[1]+str2[2]+str2[3].toUpperCase()+str2[4];
+ console.log(str1+str3);
+
+ 
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arr =[1,2,1,2,5,1,6];
+    var arr1=[];
+    for (i=0;i<arr.length;i++){
+        var flag = false;//假定它不重复
+        for(j=0;j<arr1.length;j++){
+            if(arr1[j]===arr[i]){
+                var flag = true;
+                break
+            }
+        }
+        if(!flag) {
+            arr1.push(arr[i]);
+        }
+        console.log(arr1);
+    }
+    // console.log(arr1);
+</script>
+</html>
